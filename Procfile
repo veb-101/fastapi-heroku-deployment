@@ -1,1 +1,1 @@
-web: gunicorn fast_api_app:app -w 2 -k uvicorn.workers.UvicornWorker --bind 0.0.0.0:$PORT --preload
+web: gunicorn image_classification:app -w 2 -k uvicorn.workers.UvicornWorker --bind 0.0.0.0:$PORT --preload
